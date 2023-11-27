@@ -3,8 +3,46 @@ export default class Conversor{
         let saida = "";
         let aux = valor;
         let ok = true;
-        if (aux.length==0 || aux.length < 2) {
+        if (aux.length==0) {
           return "VALOR INVÁLIDO"
+        }else if(aux.length==1){
+          switch (aux) {
+            case "0":
+              saida+="Preto, Preto, Dourado, Dourado."
+              break;
+            case "1":
+              saida+="Marrom, Preto, Dourado, Dourado."
+              break;
+            case "2":
+              saida+="Vermelho, Preto, Dourado, Dourado."
+              break;
+            case "3":
+              saida+="Laranja, Preto, Dourado, Dourado."
+              break;
+            case "4":
+              saida+="Amarelo, Preto, Dourado, Dourado."
+              break;
+            case "5":
+              saida+="Verde, Preto, Dourado, Dourado."
+              break;
+            case "6":
+              saida+="Azul, Preto, Dourado, Dourado."
+              break;
+            case "7":
+              saida+="Roxo, Preto, Dourado, Dourado."
+              break;
+            case "8":
+              saida+="Cinza, Preto, Dourado, Dourado."
+              break;
+            case "9":
+              saida+="Branco, Preto, Dourado, Dourado."
+              break;
+            default:
+              ok = false
+              break;
+          }
+          
+          return saida
         } else {
           for(let i = 0; i < 2; i++){
             switch (aux[i]) {
@@ -208,24 +246,7 @@ export default class Conversor{
         }
         if (ok) {
           valor = valor.toLocaleString()
-          // let c = 0
-          // let aux = ""
-          // for(let i = valor.length-1; i >= 0; i--){
-          //   c++
-          //   aux += valor[i]
-          //   if (c==3 && i) {
-          //     aux+="."
-          //     c=0
-          //   }
-          // }
-          // valor = ""
-          // for(let i = aux.length-1; i >= 0; i--){
-          //   valor += aux[i]
-          // }
-          // if (valor[0] == ".") {
-          //   valor[0] == ""
-          // }
-            return valor + " Ohms"
+          return valor + " Ohms"
         } else {
             return "Selecione as cores corretamente"
         }

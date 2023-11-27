@@ -22,6 +22,11 @@ const CorParaValor = ({navigation}) => {
     
     return (
         <View style={styles.container}>
+          <Text style={styles.titulo}>Converter cor para valor</Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
+
           <Text style={styles.fonte}>Escolha a faixa 1:</Text>
           <View style={styles.pickerContainer}>
             <Picker
@@ -83,6 +88,10 @@ const styles = StyleSheet.create({
       backgroundColor: '#FFDEAD',
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    titulo: {
+      fontSize: 25,
+      fontWeight: 'bold',
     },
     pickerContainer: {
       borderWidth: 2,

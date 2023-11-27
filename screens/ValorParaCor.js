@@ -23,12 +23,20 @@ const ValorParaCor = ({navigation}) => {
 
     return (
         <View style={styles.container}>
+            <Text style={styles.titulo}>Converter valor para cor</Text>
+            <Text> </Text>
+            <Text> </Text>
+            <Text> </Text>
+
             <Text style={styles.fonte}>Insira o valor da resistência elétrica</Text>
             <TextInput value={valor} onChangeText={setValor} style={styles.input} />
+
             <Text style={styles.fonte}>{cores}</Text>
+
             <TouchableOpacity onPress={valorParaCor} style={styles.botao}>
                 <Text style={styles.textoBotao}>Gerar cores</Text>
             </TouchableOpacity>
+
             <TouchableOpacity onPress={trocarTelaMenu} style={styles.botao}>
                 <Text style={styles.textoBotao}>Voltar para o menu</Text>
             </TouchableOpacity>
@@ -44,6 +52,10 @@ const styles = StyleSheet.create({
       backgroundColor: '#FFDEAD',
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    titulo: {
+      fontSize: 25,
+      fontWeight: 'bold',
     },
     input: {
       padding: 5,
