@@ -3,11 +3,11 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 const Menu = ({ navigation }) => {
   function TrocarCorParaValor() {
-    navigation.navigate('CorParaValor');
+    navigation.navigate('Cor Para Valor');
   }
 
   function TrocarValorParaCor() {
-    navigation.navigate('ValorParaCor');
+    navigation.navigate('Valor Para Cor');
   }
 
   return (
