@@ -13,8 +13,8 @@ export default function App() {
     <NavigationContainer>
       <Pilha.Navigator>
         <Pilha.Screen component={Menu} name="Menu"/>
-        <Pilha.Screen component={CorParaValor} name="CorParaValor"/>
-        <Pilha.Screen component={ValorParaCor} name="ValorParaCor"/>
+        <Pilha.Screen component={CorParaValor} name="Cor Para Valor"/>
+        <Pilha.Screen component={ValorParaCor} name="Valor Para Cor"/>
       </Pilha.Navigator>
     </NavigationContainer>
   );
